@@ -1,0 +1,32 @@
+本脚本需要授予执行sh工具（推荐mt管理器）以root权限
+
+1.将带有Rec&Magisk的boot放到rootedboot文件夹
+
+"我找到了一个30g_twrp_magisk.img
+现在我就可以将它放入rootedboot文件夹里"
+
+2.将提取出来将要修补的boot后缀改为.img 放入unrootedboot文件夹
+
+一般情况使用9008提取
+QFIL打开分区表选择boot_$slot对应分区
+右击管理分区
+Read Data备份
+备份路径会在QFIL日志中出现
+位于隐藏文件夹AppData里
+例如C:\user\Admin\AppData\Roming\Qualcomm\QFIL\COMPART_X
+是一个ReadData开头的.bin文件，大小为64M
+
+"我把它改成1.img，扔到unrootedboot文件夹里"
+
+注意!:unrootedboot文件夹一次只能存在一个boot，制作完毕会自动删除
+
+3.生成的ramdisk在initrd文件夹，可进行改名备用，调用时改名回initrd.img即可
+
+"我有一个ofox的initrd，现在我要搞twrp的initrd，不会覆盖掉原本的initrd"
+
+4.生成的新boot在new_rootedboot文件夹
+
+5.小概率掉Magisk(划掉)
+
+Based on LG G7 ThinQ
+2020.3.21

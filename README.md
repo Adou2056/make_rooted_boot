@@ -3,3 +3,5 @@
 适用于`system-as-root`以及其他ramdisk存在于boot中的设备<br>
 以zip下载食用，请运行完`mkdir_folders.sh`后阅读`说明.txt`<br>
 建议赋予su权限以MT管理器、Termux执行`开始制作.sh`
+感谢ggrandou的abootimg项目:
+https://github.com/ggrandou/abootimg
